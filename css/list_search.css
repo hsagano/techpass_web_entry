@@ -1,0 +1,902 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*============================
+body.list_search
+============================*/
+body.list_search {
+}
+
+/*============================
+#header
+============================*/
+body.list_search div.main{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+body.list_search div.main h2 {
+    color: #036eb7;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 14px 0 6px 0;
+}
+body.list_search div.main div.search-conditions {
+    position: relative;
+    background-color: #f7f7f7;
+    border: 6px solid #dbdcdc;
+}
+body.list_search div.main div.search-conditions table {
+    width: 100%;
+}
+body.list_search div.main div.search-conditions th,
+body.list_search div.main div.search-conditions td {
+    padding: 8px 8px 8px 12px;
+}
+body.list_search div.main div.search-conditions th {
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #dbdcdc;
+    /*width: 320px;*/
+}
+body.list_search div.main div.search-conditions th img {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+body.list_search div.main div.search-conditions th span {
+    width: 96px;
+    display: block;
+    float: left;
+}
+body.list_search div.main div.search-conditions th button.green {
+    width: 120px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    float: right;
+}
+body.list_search div.main div.search-conditions td {
+    background-color: white;
+    border-bottom: 1px solid #dbdcdc;
+}
+body.list_search div.main div.search-conditions td ul.inner {
+    display: inline-block;
+    padding: 0;
+    margin: 0px 0px 0px 12px;
+}
+body.list_search div.main div.search-conditions td ul.inner li {
+    float: left;
+    margin: 4px 10px 4px 0;
+}
+body.list_search div.main div.search-conditions td ul.inner .no_condition {
+    color: #777;
+}
+body.list_search div.main div.search-conditions td div.select-container {
+    height: 32px;
+}
+body.list_search div.main div.search-conditions div.bottom {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body.list_search div.main div.search-conditions div.bottom button{
+    width: 320px;
+}
+
+body.list_search div.main div.search-conditions div.bottom button img {
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+body.list_search div.select-container {
+    border: 1px solid #DBDCDC;
+}
+
+body.list_search div.result div.total-page-area {
+    display: inline-block;
+    width: 100%;
+    margin-top: 12px;
+}
+body.list_search div.result div.total-page-area.bottom {
+    margin-bottom: 48px;
+}
+body.list_search div.result div.total {
+    margin-top: 16px;
+    font-size: 12px;
+    float: left;
+}
+body.list_search div.result div.total span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: .2em;
+    color: #036eb7;
+}
+body.list_search div.result div.page {
+    text-align: center;
+    float: right;
+}
+body.list_search div.result div.page ul.pagination {
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    margin: 14px 0 0 0;
+}
+body.list_search div.result div.page ul.pagination li {
+    text-align: center;
+    margin: 0 2px;
+    float: left;
+    font-weight: bold;
+}
+body.list_search div.result div.page ul.pagination li a,
+body.list_search div.result div.page ul.pagination li span {
+    background-color: #eeeeef;
+    border: 1px solid #dbdcdc;
+    border-radius: 3px;
+    height: 18px;
+    width: 24px;
+    padding: 5px 3px;
+    display: block;
+}
+body.list_search div.result div.page ul.pagination li.active span,
+body.list_search div.result div.page ul.pagination li span:hover {
+    background-color: #036eb7;
+    border-color: #036eb7;
+    color: #fff;
+}
+body.list_search div.result div.page ul.pagination li.disabled span,
+body.list_search div.result div.page ul.pagination li.disabled span:hover {
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
+body.list_search div.result ul.list {
+    clear: left;
+    position: relative;
+    padding: 0;
+    margin-bottom: 10px;
+    min-height: 120px;
+}
+.no-jobs {
+    text-align: center;
+    margin-top: 6em;
+}
+
+body.list_search div.result ul.list li.entry {
+    margin-top: 33px;
+    background-color: #f7f7f7;
+    border: 1px solid #DBDCDC;
+    position: relative;
+}
+body.list_search div.result ul.list li.entry div.release {
+    position: absolute;
+    width: 108px;
+    height: 26px;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    left: 19px;
+    top: -10px;
+}
+body.list_search div.result ul.list li.entry div.release.today {
+    background: url(../img/label_2_yellow.png);
+}
+body.list_search div.result ul.list li.entry div.release.three-day {
+    background: url(../img/label_2_orange.png);
+}
+body.list_search div.result ul.list li.entry div.release.week {
+    background: url(../img/label_2_red.png);
+}
+div#wrapper div.section.newarrival ul.items>li div.jobtitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body.list_search .result .list .entry .title-area {
+    padding: 24px 24px 16px 24px;
+}
+body.list_search div.result ul.list li.entry h3 {
+    font-size: 18px;
+    margin: 0;
+    display: inline-block;
+}
+
+body.list_search div.result ul.list li.entry ul.employment {
+    padding: 0 0 0 20px;
+    display: inline-block;
+    float: right;
+}
+body.list_search div.result ul.list li.entry ul.employment li{
+    font-size: 12px;
+    color: #fff;
+    padding: 3px 10px;
+    float: left;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+body.list_search div.result ul.list li.entry .job-contents {
+    background: #FFF;
+    padding: 12px;
+    margin: 0 24px;
+    border-collapse:separate;
+    border-radius: 3px;
+    /*width: 620px;*/
+    overflow: hidden;
+}
+body.list_search div.result ul.list li.entry .job-contents a {
+    color: #036eb7;
+}
+
+body.list_search div.result ul.list li.entry div.eid {
+    background-color: #888;
+    padding: 1px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    clear: both;
+    width: 136px;
+}
+body.list_search div.result ul.list li.entry div.inner {
+    margin-top: 6px;
+    clear: both;
+    padding-bottom: 1px;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions {
+    overflow: hidden;
+    padding: 4px 20px;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li {
+    float: left;
+    background-color: #fff;
+    right: 20px;
+    padding: 1px 12px 1px 28px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #595757;
+    margin-right: 6px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-beginner {
+    background: #fff url(../img/search/icon_condition_beginner.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature0 {
+    background: #fff url(../img/search/icon_condition_middle.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature1 {
+    background: #fff url(../img/search/icon_condition_senior.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature2 {
+    background: #fff url(../img/search/icon_condition_english.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature3 {
+    background: #fff url(../img/search/icon_condition_china.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature4 {
+    background: #fff url(../img/search/icon_condition_hangul.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature5 {
+    background: #fff url(../img/search/icon_condition_revenue.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature6 {
+    background: #fff url(../img/search/icon_condition_foreigner.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature7 {
+    background: #fff url(../img/search/icon_condition_neer.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature8 {
+    background: #fff url(../img/search/icon_condition_ordinary.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature9 {
+    background: #fff url(../img/search/icon_condition_shortwork.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature10 {
+    background: #fff url(../img/search/icon_condition_weekday.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature11 {
+    background: #fff url(../img/search/icon_condition_fullday.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry div.inner ul.conditions li.icon-feature12 {
+    background: #fff url(../img/search/icon_condition_latemorning.png) no-repeat left center;
+}
+body.list_search div.result ul.list li.entry .skill-area span {
+    font-weight: normal;
+    padding: 4px 10px;
+    background: #FFF;
+    color: #E95513;
+    border: 1px solid #E95513;
+    margin-right: 2px;
+    margin-top: 8px;
+    display: inline-block;
+    min-height: 19px;
+}
+.details-area {
+    display: inline-block;
+    padding: 6px 24px 24px 24px;
+}
+body.list_search div.result ul.list li.entry .detail-table {
+    float: left;
+    width: 728px;
+}
+body.list_search div.result ul.list li.entry table.details {
+    background-color: #fff;
+    width: 100%;
+}
+body.list_search div.result ul.list li.entry table.details tr {
+    color: #333;
+}
+body.list_search div.result ul.list li.entry table.details tr:nth-child(1),
+body.list_search div.result ul.list li.entry table.details tr:nth-child(2) {
+    border-bottom: 1px solid #DBDCDC;
+}
+body.list_search div.result ul.list li.entry table.details th {
+    width: 56px;
+}
+body.list_search div.result ul.list li.entry table.details th,
+body.list_search div.result ul.list li.entry table.details td {
+    padding: 4px 5px;
+}
+
+body.list_search div.result ul.list li.entry table.details th span {
+    color: #036eb7;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #dbdcdc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 11px;
+    display: block;
+}
+body.list_search div.result ul.list li.entry table.details td {
+    padding: 10px;
+}
+body.list_search div.result ul.list li.entry table.details td.half {
+    width: 240px;
+}
+body.list_search div.result ul.list li.entry table.details .salary-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF2149;
+}
+body.list_search div.result ul.list li.entry table.details td.thick {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+body.list_search div.result ul.list li.entry table.details tr td a {
+    color: #036eb7;
+}
+body.list_search div.result ul.list li.entry table.details th span img.icon {
+    display: block;
+    margin: 10px auto 0;
+}
+body.list_search div.result ul.list li.entry div.buttons {
+    background-color: #f7f7f7;
+    text-align: center;
+    float: left;
+    margin-left: 22px;
+}
+body.list_search div.result ul.list li.entry div.buttons .anchor_button_wrapper {
+    height: 48px;
+    display: block;
+    margin-top: 24px;
+}
+body.list_search div.result ul.list li.entry div.buttons a {
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 158px;
+    height: 48px;
+}
+
+/*body.list_search div.result div.footer-nav {
+    margin-top: 50px;
+}
+body.list_search div.result div.footer-nav {
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #c8c9ca;
+}
+body.list_search div.result div.footer-nav ol.bc {
+    width: 1002px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 12px;
+    clear: left;
+}
+body.list_search div.result div.footer-nav ol.bc li {
+    float: left;
+    padding-left: 12px;
+    background: url(../img/search/arrow_bc.png) no-repeat left center;
+}
+body.list_search div.result div.footer-nav ol.bc li.top{
+    background: none;
+    padding-left: 6px;
+}
+
+body.list_search div.result div.footer-nav ol.bc li a,
+body.list_search div.result div.footer-nav ol.bc li a:hover,
+body.list_search div.result div.footer-nav ol.bc li a:visited,
+body.list_search div.result div.footer-nav ol.bc li a:active{
+    color: #036eb7;
+    margin-right: 12px;
+}*/
+
+/*body.list_search div.main>div.right {
+    float: right;
+    width: 300px;
+}
+body.list_search div.right div.topic {
+}*/
+
+/*安心の無料サービス*/
+/*body.list_search div.right div.topic.support {
+    margin-top: 70px;
+    position: relative;
+    height: 208px;
+}
+body.list_search div.right div.topic.support div.photo {
+    position: absolute;
+    right: 0;
+}
+body.list_search div.right div.topic.support div.photo img {
+    margin-top: -38px;
+}
+body.list_search div.right div.topic.support div.blue {
+    font-size: 26px;
+    line-height: 1.2em;
+    color: #fff;
+    width: 100%;
+    height: 108px;
+}
+body.list_search div.right div.topic.support div.blue div.text {
+    padding: 26px 26px;
+}
+body.list_search div.right div.topic.support button.button.green {
+    font-size: 18px;
+    position: relative;
+    margin: 30px auto;
+    width: 250px;
+    height: 50px;
+}
+
+!*正社員派遣、積極募集！*!
+body.list_search div.right div.topic.engineer {
+    margin-top: 28px;
+}
+body.list_search div.right div.topic.engineer div.title {
+    padding: 30px 26px;
+    font-size: 26px;
+    line-height: 1.3em;
+    color: #fff;
+    width: 100%;
+    height: 73px;
+    background: url(../img/search/bg_topic_engineer.png);
+}
+body.list_search div.right div.topic.engineer div.subject {
+    background-color: #eeeeef;
+    padding: 26px 20px;
+    height: 47px;
+    font-size: 16px;
+    color: #000;
+}
+body.list_search div.right div.topic.engineer div.description {
+    font-size: 14px;
+    padding: 14px 20px;
+}
+body.list_search div.right div.topic.engineer button.button.green {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+body.list_search div.right div.topic.engineer button.button.green span {
+}
+
+!*電話でご応募*!
+body.list_search div.right div.topic.telephone-service {
+    border: 1px solid #c8c9ca;
+    border-top: 6px solid #036eb7;
+    position: relative;
+    height: 309px;
+    margin-top: 44px;
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon{
+    width: 258px;
+    height: 54px;
+    border-radius: 3px;
+    margin: 10px auto;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.3;
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.left {
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.left img.arrow {
+    position: absolute;
+    left: -11px;
+    top: 22px;
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.left p{
+    padding-top: 18px;
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.right {
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.right img.arrow {
+    position: absolute;
+    right: -11px;
+    top: 22px;
+}
+body.list_search div.right div.topic.telephone-service div.lightblue.balloon.right p{
+    padding-top: 8px;
+}
+body.list_search div.right div.topic.telephone-service div.message {
+    color: #036eb7;
+    clear: both;
+    width: 258px;
+    margin: 20px auto;
+}
+body.list_search div.right div.topic.telephone-service ul.phone {
+    display: block;
+    background: url(../img/search/icon_blue_phone.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 258px;
+    padding: 0;
+    margin: 0 auto;
+}
+body.list_search div.right div.topic.telephone-service ul.phone li {
+    font-size: 17px;
+    margin-left: 57px;
+    font-weight: bold;
+}
+body.list_search div.right div.topic.telephone-service ul.phone li span {
+    font-size: 12px;
+    color: #fff;
+    background-color: #036eb7;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+!*特殊求人*!
+body.list_search div.right div.topic.special {
+    border: 1px solid #c8c9ca;
+    position: relative;
+    margin-top: 30px;
+
+}
+body.list_search div.right div.topic.special div.title {
+    width: 320px;
+    margin-left: 10px;
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    color: #e95513;
+    background: url(../img/search/icon_orange_star.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+body.list_search div.right div.topic.special ul {
+    margin-top: 0;
+    border-top: 6px solid #e95513;
+    padding: 0;
+}
+body.list_search div.right div.topic.special ul li {
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+
+
+}
+body.list_search div.right div.topic.special ul li a {
+}
+body.list_search div.right div.topic.special ul li a img {
+    float: left;
+}
+body.list_search div.right div.topic.special ul li a p {
+    font-size: 16px;
+    float: left;
+    width: 145px;
+    margin-left: 15px;
+
+}
+
+body.list_search div.right div.topic.special ul li a p span.small {
+    font-size: 12px;
+}
+
+!*イチオシの職種*!
+body.list_search div.right div.topic.recommends {
+    border: 1px solid #c8c9ca;
+    border-bottom: none;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+body.list_search div.right div.topic.recommends div.title {
+    margin-left: 10px;
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    color: #8dc21f;
+    background: url(../img/search/icon_lime_sign.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+body.list_search div.right div.topic.recommends ul {
+    margin-top: 0;
+    border-top: 6px solid #8dc21f;
+
+    padding: 0;
+    margin-bottom: 0;
+}
+body.list_search div.right div.topic.recommends ul li {
+    font-size: 14px;
+    height: 50px;
+    background: url(../img/search/recommend_list_arrow.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #b4b4b5;
+}
+body.list_search div.right div.topic.recommends ul li a {
+}
+body.list_search div.right div.topic.recommends ul li a div.inner {
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+body.list_search div.right div.topic.recommends ul li a:hover{
+    text-decoration: underline;
+}*/
+
+
+/*============================
+#float
+============================*/
+div#float {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div#float div.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background-color: #5a5a5a;
+    z-index: 99;
+}
+div#float div.float-inner {
+    width: 778px;
+    height: 530px;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    z-index: 100;
+}
+div#float div.float-inner div.upper div.unitTitle {
+    position: relative;
+    background: #036eb7;
+    padding: 0 20px;
+    height: 56px;
+    margin: 0 -8px;
+    border-bottom: 1px solid #002060;
+}
+div#float div.float-inner div.upper div.unitTitle:before,
+div#float div.float-inner div.upper div.unitTitle:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 4px solid transparent;
+    border-top: 4px solid #002060;
+}
+div#float div.float-inner div.upper div.unitTitle:before {
+    right: 0;
+    border-left: 4px solid #002060;
+
+}
+div#float div.float-inner div.upper div.unitTitle:after {
+    left: 0;
+    border-right: 4px solid #002060;
+}
+div#float div.float-inner div.upper div.unitTitle div.title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    margin-top: 12px;
+    height: 32px;
+    padding-left: 42px;
+}
+div#float div.float-inner div.upper div.unitTitle div.title.title-area {
+    background: url("../img/search/icon_circle_area.png") no-repeat left center;
+}
+div#float div.float-inner div.upper div.unitTitle div.title.title-occupation {
+    background: url("../img/search/icon_circle_occupation.png") no-repeat left center;
+}
+div#float div.float-inner div.upper div.unitTitle div.title.title-skill {
+    background: url("../img/search/icon_circle_skill.png") no-repeat left center;
+}
+div#float div.float-inner div.upper div.unitTitle div.title span {
+    display: inline-block;
+    margin-top: 6px;
+}
+div#float div.float-inner .float-close {
+    margin-top: 14px;
+    float: right;
+    padding: 6px 12px;
+    background: #DBDCDC;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+div#float div.float-inner div.upper .caution {
+    clear: both;
+    font-size: 12px;
+    padding: 4px 12px;
+}
+div#float div.float-inner div.upper .modal_condition_area {
+    height: 345px;
+    border-top: 1px solid #dbdcdc;
+    border-bottom: 1px solid #dbdcdc;
+}
+div#float div.float-inner div.upper div.menu {
+    height: 345px;
+    width: 190px;
+    float: left;
+    background-color: #eeeeef;
+    padding: 0;
+}
+div#float div.float-inner div.upper div.menu ol.inner {
+    padding: 0;
+    margin: 0;
+}
+div#float div.float-inner div.upper div.menu ol.inner>li {
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #dbdcdc;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+div#float div.float-inner div.upper div.menu ol.inner>li.active,
+div#float div.float-inner div.upper div.menu ol.inner>li:hover {
+    background-color: #036eb7;
+    color: #fff;
+}
+div#float div.float-inner div.upper div.menu ol.inner>li div.icon {
+    padding-top: 16px;
+}
+div#float div.float-inner div.upper div.body {
+    height: 325px;
+    padding: 10px 20px;
+    float: left;
+    width: 548px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+div#float div.float-inner div.upper div.body ol.inner {
+    position: relative;
+    margin: 0;
+}
+div#float div.float-inner div.upper div.body ol.inner>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+div#float div.float-inner div.upper div.body ol.inner>li.active {
+    display: block;
+}
+div#float div.float-inner div.upper div.body ol.inner>li div.label {
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px dotted #DBDCDC;
+}
+div#float div.float-inner div.upper div.body ol.inner>li ul {
+    overflow: hidden;
+    margin-top: 14px;
+    padding: 0 0 0 5px;
+}
+div#float div.float-inner div.upper div.body ol.inner>li ul li {
+    float: left;
+    min-width: 50%;
+    margin-bottom: 10px;
+}
+div#float div.float-inner div.upper div.body ol.inner>li ul.three-way-split li {
+    min-width: 33.3333%;
+}
+div#float div.float-inner div.upper div.body ol.inner>li.way ul li {
+    margin-right: 40px;
+    min-width: auto;
+}
+div#float div.float-inner div.upper div.body ol.inner>li ul li label:hover {
+    color: #E95513;
+}
+div#float div.float-inner div.upper div.body ol.inner>li ul li label input{
+    vertical-align: middle;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+div#float div.float-inner div.bottom {
+    background-color: #FFF;
+    padding: 12px;
+    text-align: center;
+}
+div#float div.float-inner div.bottom div.selected_condition {
+    width: 560px;
+    height: 65px;
+    float: left;
+    background-color: #CCFF66;
+    border-radius : 3px;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+div#float div.float-inner div.bottom div.selected_condition p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+div#float div.float-inner div.bottom div.selected_condition div.selected_view_area {
+    text-align: left;
+    word-wrap: break-word;
+}
+div#float div.float-inner div.bottom div.selected_condition div.selected_view_area span {
+    line-height: 22px;
+}
+div#float div.float-inner div.bottom span.anchor_button_wrapper {
+    width: 150px;
+    height: 77px;
+    float: right;
+    background: #f7f7f7;
+    border-radius : 3px;
+}
+div#float div.float-inner div.bottom button.button.green {
+    width: 120px;
+    height: 45px;
+    margin: 14px;
+    font-size: 14px;
+}
+div#float div.float-inner div.bottom button.button.green i {
+    margin-left: 14px;
+}
+
+/*============================
+#select_guarantee
+============================*/
+div#float div.float-inner div.upper div.body ol.inner>li div.select-container select#select_guarantee {
+}
+div#float div.float-inner div.upper div.body ol.inner>li div.select-container select#select_guarantee option {
+}
+
+/*============================
+#select_span
+============================*/
+div#float div.float-inner div.upper div.body ol.inner>li div.select-container select#select_span {
+}
+div#float div.float-inner div.upper div.body ol.inner>li div.select-container select#select_span option {
+}
